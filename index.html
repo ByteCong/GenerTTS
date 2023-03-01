@@ -25,18 +25,28 @@ td {
 </head>
 
 <body>
-<h1>TTS: </h1>
-
+<h1>Speech-Weaver: Towards a multi-lingual, multi-style, multi-timbre transferable text-to-speech system </h1>
 
 
 <h2>Abstract</h2>
 <p align="justify" style="font-size:20px">
-We work to create a speech synthesis system which can generate
-speech with specified style and timbre in a multi-lingual scene.
-However, limited existence of polyglot datasets makes multi-
-lingual systems hard to generate speech with native pronuncia-
-tion. 
-</p>
+This paper focuses on disentangling the components of speech,
+including timbre, style, and language, and enabling the free
+combination of these attributes in multilingual scenarios. Two
+primary challenges in achieving this objective are identified:
+cross-lingual style transfer and cross-lingual timbre transfer. To
+tackle these challenges, we present Speech-Weaver, a transfer-
+able multi-lingual multi-style, and multi-timbre text-to-speech
+system. The system can generate speech with a specified tim-
+bre and style, regardless of the spoken language, and without
+the need for parallel datasets. Specifically, we first separate
+timbre and other features by using a self-supervised speech
+representation as the output target of the encoder. Second, a
+style adaptor is proposed to extract fine-grained style infor-
+mation and reduce non-native accents in style based on mu-
+tual information minimization. Experiment results show that
+Speech-Weaver outperforms baseline systems in terms of natu-
+ralness and pronunciation.</p>
 <h3> </h3>
 
 
