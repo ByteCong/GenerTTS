@@ -25,7 +25,7 @@ td {
 </head>
 
 <body>
-<h1>Speech-Weaver: Towards a multi-lingual, multi-style, multi-timbre transferable text-to-speech system </h1>
+<h1>GenerTTS: Pronunciation Disentanglement for Timbre and Style Generalization in Cross-Lingual Text-to-Speech </h1>
 
 
 <h2>Abstract</h2>
@@ -63,15 +63,17 @@ adaptor. </li>
 <h3> zh-CN </h3>
 <table><tr>
 <th>Text</th>
-<th>Aunque hay turistas, no suele estar muy concurrido.</th>
-<th>Los proyectiles no les llegan, utilizan una capa electromagnética.</th>
-<th>Aprenderás muchas cosas interesantes mientras te diviertes.</th>
+<th>zh-CN: Aunque hay turistas, no suele estar muy concurrido.</th>
+<th>zh-CN: Los proyectiles no les llegan, utilizan una capa electromagnética.</th>
+<th>en-US: Aprenderás muchas cosas interesantes mientras te diviertes.</th>
+<th>en-US: Aprenderás muchas cosas interesantes mientras te diviertes.</th>
 </tr>
 
 <tr>
 <th>Para</th>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/ShortSentence/00003.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/ShortSentence/00028.wav" controls="controls">Audio Tag not supported.</audio></td>
+<td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/ShortSentence/00006.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/ShortSentence/00006.wav" controls="controls">Audio Tag not supported.</audio></td>
 </tr>
 
@@ -80,6 +82,7 @@ adaptor. </li>
 <td><audio src="./audio/bc2021/TTS/NEW/Waves/ShortSentence/00003.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/TTS/NEW/Waves/ShortSentence/00028.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/TTS/NEW/Waves/ShortSentence/00006.wav" controls="controls">Audio Tag not supported.</audio></td>
+<td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/ShortSentence/00006.wav" controls="controls">Audio Tag not supported.</audio></td>
 </tr>
 
 <tr>
@@ -87,98 +90,30 @@ adaptor. </li>
 <td><audio src="./audio/bc2021/TTS/NEW/Waves/ShortSentence/00003.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/TTS/NEW/Waves/ShortSentence/00028.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/TTS/NEW/Waves/ShortSentence/00006.wav" controls="controls">Audio Tag not supported.</audio></td>
+<td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/ShortSentence/00006.wav" controls="controls">Audio Tag not supported.</audio></td>
 </tr>
 
 </table>
 
-<h2>Huber Analysis</h2>
 
-<h3> Voice conversion </h3>
+<h2> Evaluation on more languages </h2>
 <table><tr>
 <th>Text</th>
-<th>No tienen miedo de nada, y en algunas ocasiones hasta buscan la confrontación porque esto los estimula.</th>
-<th>La memoria es una construcción propia que se alimenta del recuerdo y del olvido.</th>
-<th>Compramos unas entradas que decían ser visibilidad reducida, pero era visibilidad cero.</th>
+<th>zh-CN: No tienen miedo de nada, y en algunas ocasiones hasta buscan la confrontación porque esto los estimula.</th>
+<th>en-US: La memoria es una construcción propia que se alimenta del recuerdo y del olvido.</th>
+<th>ja-JP: Compramos unas entradas que decían ser visibilidad reducida, pero era visibilidad cero.</th>
+<th>pt-BR: Compramos unas entradas que decían ser visibilidad reducida, pero era visibilidad cero.</th>
 </tr>
 
 <tr>
-<th>M2M</th>
+<th>Para</th>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
 </tr>
 
 <tr>
-<th>F2M</th>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
-</tr>
-
-<tr>
-<th>F2F</th>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
-</tr>
-
-<tr>
-<th>M2M</th>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
-</tr>
-
-</table>
-
-<h3> Bottleneck Feature Comparison </h3>
-<table><tr>
-<th>Text</th>
-<th>No tienen miedo de nada, y en algunas ocasiones hasta buscan la confrontación porque esto los estimula.</th>
-<th>La memoria es una construcción propia que se alimenta del recuerdo y del olvido.</th>
-<th>Compramos unas entradas que decían ser visibilidad reducida, pero era visibilidad cero.</th>
-</tr>
-
-<tr>
-<th>Hubert</th>
-<td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
-</tr>
-
-<tr>
-<th>XLSR53-12th</th>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
-</tr>
-
-<tr>
-<th>ASRE</th>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
-</tr>
-
-<tr>
-<th>w/o-BNF</th>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
-<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
-</tr>
-
-</table>
-
-<h2> Cross-lingual Style Transfer </h2>
-<table><tr>
-<th>Text</th>
-<th>No tienen miedo de nada, y en algunas ocasiones hasta buscan la confrontación porque esto los estimula.</th>
-<th>La memoria es una construcción propia que se alimenta del recuerdo y del olvido.</th>
-<th>Compramos unas entradas que decían ser visibilidad reducida, pero era visibilidad cero.</th>
-</tr>
-
-<tr>
-<th>w/o-Accent-MI</th>
+<th>M3</th>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
 <td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00016.wav" controls="controls">Audio Tag not supported.</audio></td>
@@ -192,6 +127,39 @@ adaptor. </li>
 </tr>
 
 </table>
+
+
+<h2>Huber Analysis</h2>
+<table><tr>
+<th>Text</th>
+<th>No tienen miedo de nada, y en algunas ocasiones hasta buscan la confrontación porque esto los estimula.</th>
+<th>La memoria es una construcción propia que se alimenta del recuerdo y del olvido.</th>
+</tr>
+
+<tr>
+<th>M2M</th>
+<td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
+<td><audio src="./audio/bc2021/NonTTS/RECORDING/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
+</tr>
+
+<tr>
+<th>F2M</th>
+<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
+<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
+</tr>
+
+<tr>
+<th>F2F</th>
+<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
+<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
+</tr>
+
+<tr>
+<th>M2M</th>
+<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00029.wav" controls="controls">Audio Tag not supported.</audio></td>
+<td><audio src="./audio/bc2021/TTS/NEW/Waves/LongSentence/00013.wav" controls="controls">Audio Tag not supported.</audio></td>
+</tr>
+
 
 <br>
 <br>
